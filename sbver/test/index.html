@@ -13,7 +13,7 @@
 <script>
     fetch('https://sipity19.github.io/sbver/ver.json')
         .then(data => data.json())
-        .then(ver => document.getElementById('content').innerHTML = ver);
+        .then(ver => document.getElementById('content').innerHTML = JSON.stringify(ver));
 </script>
 </body>
 </html>
